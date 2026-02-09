@@ -1,0 +1,112 @@
+/* Reset default margins and set full height */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Flexbox layout for page structure */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Profile picture styling */
+.header_pfp {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+/* Header navigation links */
+.header > .links {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 3rem;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+/* Header spacing */
+.header {
+  margin-top: .5rem;
+}
+
+/* Introduction text margin */
+.intro_text {
+  margin-left: .5rem;
+}
+
+/* Link styling */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+  color: blue;
+}
+
+/* Main hero section */
+.home_hero {
+  max-width: 75%;
+  margin: 0 auto;
+  font-size: 1.3rem;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 480px) {
+  .home_hero {
+    max-width: 90%;
+  }
+
+  .header > .links {
+    flex-direction: column;
+    gap: .5rem;
+  }
+}
+
+/* Footer list layout */
+.footer > ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+/* Footer positioning */
+footer {
+  margin: auto 20px 0 0;
+  padding: 0;
+}
+
+/* Experience item card styling */
+.experience_item {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  background: rgba(0, 0, 0, 0.05);
+  width: 75%;
+  padding: 1rem 2rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Experience subtitle text */
+.experience_subtitle {
+  font-weight: normal;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+/* Heading reset */
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+/* Experience list left alignment */
+.exp_list {
+  text-align: left;
+}
